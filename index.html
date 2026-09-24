@@ -1,0 +1,21 @@
+
+INICIO 
+//Entrada
+definir esPedidoViable booleano
+definir preciounitario 1000 Decimal
+definir pesounidad 15 Decimal
+definir cantidad 60 entero
+definir SaldoCliente 100000 Decimal
+//proceso
+escribir 'Ingrese el precio unitario.'
+leer -> preciounitario
+escribir 'Ingrese el peso de la unidad.'
+leer -> pesounidad
+escribir 'Ingrese la cantidad de unidades.'
+leer -> cantidad
+escribir 'Ingrese el saldo a favor.'
+leer -> SaldoCliente
+esPedidoViable = (cantidad>50) Y (preciounitario * cantidad<=SaldoCliente) Y (pesounidad * cantidad<=750)
+//SALIDA
+escribir esPedidoViable
+FIN
